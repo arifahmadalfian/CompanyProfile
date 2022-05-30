@@ -16,7 +16,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    color: var(--greycolor) !important;
+    color: #fff;
     position: relative;
     padding : 2px 0 2px 0 !important;
     box-sizing: border-box;
@@ -25,7 +25,7 @@
 
 .nav-link.active {
     font-weight: 600 !important;
-    color: var(--textcolor);
+    color: #fff !important;
     position: relative;
 }
 

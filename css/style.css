@@ -50,10 +50,26 @@ body {
 #hero {
     padding-top: 66px;
     height: 100vh;
+    background-image: url(../assets/hero\ backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     color: var(--textcolor);
+}
+
+#hero h2 {
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
 }
 
 p {
