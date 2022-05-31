@@ -10,8 +10,8 @@ window.addEventListener('scroll', function() {
         socialnav.style.color = '#fff';
         ion.style.color ="#fff";
         Array.from(navlink).forEach(function(e) {
-            if ( screen.width < 576 ) {
-                e.style.color ="var(--textcolor)";
+            if ( screen.width < 992 ) {
+                e.style.color ='#000';
             } else {
                 e.style.color ="#fff";
             }
