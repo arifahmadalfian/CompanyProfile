@@ -29,6 +29,16 @@
     position: relative;
 }
 
+@media screen and (max-width : 768px) {
+    .nav-link {
+        color: var(--textcolor);
+    }
+    
+    .nav-link.active {
+        color: var(--textcolor) !important;
+    }
+}
+
 .nav-link.active::before {
     content:"";
     display: block;

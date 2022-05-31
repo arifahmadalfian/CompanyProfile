@@ -3,15 +3,20 @@ const navlink = document.getElementsByClassName('nav-link');
 const socialnav = document.getElementsByClassName('social-nav')[0];
 const ion = document.querySelector('.social-nav ion-icon');
 window.addEventListener('scroll', function() {
-    if (window.pageYOffset <= 0 ) {
+    let tinggi = window.pageYOffset
+    if (tinggi <= 0 ) {
         navbar.style.background = 'transparent';
         navbar.style.boxShadow = '0px 4px 24px rgba(105, 105, 105, 0)';
         socialnav.style.color = '#fff';
         ion.style.color ="#fff";
         Array.from(navlink).forEach(function(e) {
-            e.style.color ="#fff";
+            if ( screen.width < 576 ) {
+                e.style.color ="var(--textcolor)";
+            } else {
+                e.style.color ="#fff";
+            }
         });
-    } else if (window.pageYOffset > 0) {
+    } else if (tinggi = 1) {
         navbar.style.background = '#fff';
         navbar.style.boxShadow = '0px 4px 24px rgba(105, 105, 105, 0.1)';
         socialnav.style.color = '#000';
