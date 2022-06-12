@@ -49,7 +49,7 @@ body {
 
 #hero {
     padding-top: 66px;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../assets/hero\ backgroung.jpg);
     background-repeat: no-repeat;
     background-size: cover;
